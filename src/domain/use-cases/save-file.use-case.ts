@@ -21,7 +21,6 @@ export class SaveFile implements SaveFileUseCase{
         try{
             fs.mkdirSync(destination, { recursive: true });
             fs.writeFileSync(`${destination}/${fileName}.txt`, fileContent);
-            
             return true;
         }catch(error){
             console.log(error);

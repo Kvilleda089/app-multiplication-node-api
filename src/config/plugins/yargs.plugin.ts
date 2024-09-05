@@ -1,6 +1,5 @@
 import yargs from 'yargs';
 import {hideBin} from 'yargs/helpers';
-import { CreateTableUseCase } from '../../domain/use-cases/create-table.use-case';
 
 
 export const yarg = yargs(hideBin(process.argv))
